@@ -22,8 +22,9 @@ body{
 .logo{    
     filter: brightness(1.1);/*quita el brillo de la imagen*/
     mix-blend-mode: multiply;/*retira el fondo blanco de la imagen haciendo que el logo se mezcle con el fondo que esta detras de el*/
-     
- }
+    width: 110px;
+    height: 110px;
+}
  /*estilos del navegador*/
 #nav{
      margin-block-start: 40px;
