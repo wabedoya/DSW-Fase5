@@ -1,0 +1,205 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*estilos del cuerpo de mi pagina*/
+body{ 
+    background-image: linear-gradient(to right top, #000000, #3b3b3b, #777777, #b9b9b9, #ffffff);
+    padding-block-start: 20px;
+    padding-block-end: 20px;
+    
+ 
+}  
+
+#titulo {
+    text-align: center; /*alineacion del titulo en el centro */
+    
+    
+}
+
+
+.logo{    
+    filter: brightness(1.1);/*quita el brillo de la imagen*/
+    mix-blend-mode: multiply;/*retira el fondo blanco de la imagen haciendo que el logo se mezcle con el fondo que esta detras de el*/
+     
+ }
+ /*estilos del navegador*/
+#nav{
+     margin-block-start: 40px;
+     margin-block-end: 40px;
+     
+     
+}
+ #navbarDropdownMenuLink{
+     padding-inline-start: 50px;
+     padding-inline-end: 50px;
+     
+     
+ }
+ /*Señalo el color de la etiqueta diferente en el navegador para que llame la atencion que es la 
+ actividad nueva */
+ #aprendizaje a{ 
+     color: #97c93e !important;
+ }
+
+
+     
+ 
+#main{
+    
+    
+    background-color: white
+   
+}
+h2{
+    text-align: center; /*alineacion de los titulos tipo h2*/
+   padding-block-start: 20px;
+}
+h3{
+    text-align: center;
+    padding-block-start: 20px;
+    
+}
+#section{
+    
+    padding-block-end: 40px;
+  
+}
+
+#aside{
+    
+    padding-block-start: 40px;
+    padding-block-end: 40px;
+   
+    
+ }
+ #iframe{
+    width: 100%;
+    min-width: 340px;
+    min-height: 520px;
+    
+ }
+ /*estilos del formulario*/
+ #iframe-form{
+    width: 100%;
+    max-width: 590px;
+    min-width: 340px;
+    height: 1200px;
+
+ }
+#footer {
+    background-color:black;
+    color: white;
+    text-align: center;
+    border: 2px solid grey;
+    padding-block-start: 20px;
+    padding-block-end: 20px;
+    margin-block-end: 20px;
+  
+}
+#footer a{
+    color: white;
+}
+#footer a:hover{
+    color: blue;
+}
+#img-{
+    display: block;
+    margin: auto;
+    border: 3px solid black;
+    margin-block-end: 20px;
+    max-width: 400px;
+    max-height: 400px;
+    
+      
+}
+.audio{
+    background-color: black;
+    border: solid red 2px;
+    display: block;
+    margin: auto ;
+    margin-top: 30px;
+}  
+#video{
+    width:100% ;
+    max-width: 500px;
+    height: 400px;
+    border: solid black 2px;
+    display: block;
+    margin: auto ;
+    margin-top: 30px;
+}
+/*En esta media query cuando el tamaño de la pantalla este entre  575 pixeles y 200 pixeles mi
+ pagina se adaptara a cierta propiedades que impondre*/
+ @media screen and (min-width:200px) and (max-width:575px){
+    body{
+        font-size: 12px;
+        margin: 0;
+    }
+    .logo{
+        width: 50px;
+        height: 50px;
+    }
+   
+    #iframe{
+        margin-inline-start: 0;
+    }
+    #section{
+        padding-block-end: 10px;
+        margin-inline-start: 0;
+       
+    }
+    #aside{
+        padding-block-start: 5px;
+        padding-block-end: 0;
+    }
+    /*estilos del formulario*/
+    #iframe-form{
+        width: 360px;
+        height: 520px;
+        margin: 0;
+
+    }
+    #nav{
+        margin-block-start: 5px;
+        margin-block-end: 5px;
+        
+        
+   }
+   
+  
+    
+
+    
+}
+
+    
+/*En esta media query cuando el tamaño de la pantalla este entre  992 pixeles y 576 pixeles mi
+ pagina se adaptara a cierta propiedades que impondre*/
+@media  screen and (min-width:576px) and (max-width:992px){
+    body{
+        font-size:14px;
+    }
+    .logo{
+        width: 80px;
+        height: 80px;
+    }
+    
+    #iframe{
+        margin-inline-start: 40px;
+    }
+    /*estilos del formulario*/
+    #iframe-form{
+        width: 450px;
+        height: 520px;
+        margin: 0;
+
+    }
+    #nav{
+        margin-block-start: 20px;
+        margin-block-end: 20px;
+        
+        
+   }
+}
